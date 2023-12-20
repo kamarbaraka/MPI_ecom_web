@@ -3,6 +3,7 @@ plugins {
     id("org.springframework.boot") version "3.2.0"
     id("io.spring.dependency-management") version "1.1.4"
     id("com.netflix.dgs.codegen") version "6.0.3"
+    id("org.liquibase.gradle") version "2.2.1"
 }
 
 group = "org.kamar"
@@ -43,6 +44,7 @@ dependencies {
     implementation("org.springframework.integration:spring-integration-security")
     implementation("org.springframework.integration:spring-integration-webflux")
     implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity6")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
     compileOnly("org.projectlombok:lombok")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     developmentOnly("org.springframework.boot:spring-boot-docker-compose")

@@ -1,0 +1,2 @@
+changelogFile: classpath:db/changelog/changelog.sql
+changeSetAuthor: "kamar baraka"

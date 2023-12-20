@@ -1,0 +1,20 @@
+spring:
+  config:
+    import: optional:credentials-dev.yaml
+  datasource:
+    url:
+  sql:
+    init:
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
+server:
+  port: 9080
+  http2:
+    enabled: true
+  error:
+    include-stacktrace: never
+    include-exception: false
+    include-binding-errors: never
