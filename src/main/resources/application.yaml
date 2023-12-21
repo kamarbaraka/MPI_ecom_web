@@ -1,17 +1,17 @@
+
 spring:
   profiles:
+    #set the active profile
     active: dev
+  # enable virtual threads
   threads:
     virtual:
       enabled: true
 
+# configure spring doc open api
 springdoc:
   enable-hateoas: true
   api-docs:
     enabled: true
-    path: classpath:api_doc
     resolve-schema-properties: true
   show-oauth2-endpoints: true
-  swagger-ui:
-    url: /documentation
-    version: 31
