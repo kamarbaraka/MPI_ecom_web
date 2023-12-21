@@ -33,7 +33,6 @@ public class CartItem {
     @Column(name = "quantity", nullable = false)
     private int quantity = 0;
 
-    @FutureOrPresent
     @Column(name = "updated_on", nullable = false)
     private Timestamp updatedOn = Timestamp.valueOf(LocalDateTime.now());
 

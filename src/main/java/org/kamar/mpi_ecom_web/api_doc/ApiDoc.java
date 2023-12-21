@@ -33,7 +33,7 @@ import org.springframework.web.bind.annotation.RestController;
         ),
         servers = {
                 @Server(
-                        url = "",
+                        url = "http://localhost:9080",
                         description = "MPI Resource Server."
                 )
         },
